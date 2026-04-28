@@ -1,8 +1,8 @@
-# DriveMetrics 🚗📊
+# Drive Evo 🚗📊
 
-**DriveMetrics**, sürüş verilerini gerçek zamanlı analiz ederek kullanıcıya bir **sürüş puanı (0–100)** ve bu puana dayalı **kişiselleştirilmiş sigorta teklifi** sunan bir web uygulamasıdır.
+**Drive Evo**, sürüş verilerini gerçek zamanlı analiz ederek kullanıcıya bir **sürüş puanı (0–100)** sunan ve daha güvenli, verimli bir sürüş için **yapay zeka destekli kişiselleştirilmiş tavsiyeler** üreten yenilikçi bir web uygulamasıdır.
 
-> Kullanıcı sensörü başlatır → Python backend puanı hesaplar → Sigorta sistemi anında fiyat üretir.
+> Kullanıcı sensörü başlatır → Python backend veriyi analiz edip puanı hesaplar → Sürücüye anında performans raporu ve iyileştirme önerileri sunulur.
 
 ---
 
@@ -24,7 +24,7 @@ Projeyi çalıştırmadan önce aşağıdaki araçların sisteminizde kurulu old
 
 ```bash
 git clone https://github.com/zaimcanvayic/DriveMetrics-.git
-cd DriveMetrics
+cd Drive Evo
 ```
 
 ### 2. Frontend bağımlılıklarını yükleyin
@@ -51,7 +51,7 @@ cd ..
 
 ## 🚀 Kullanım
 
-DriveMetrics iki ayrı servis olarak çalışır. Her ikisini de **farklı terminal pencerelerinde** başlatın.
+Drive Evo iki ayrı servis olarak çalışır. Her ikisini de **farklı terminal pencerelerinde** başlatın.
 
 ### Terminal 1 — Python API (port 8000)
 
@@ -85,11 +85,10 @@ Tarayıcınızda **[http://localhost:3000](http://localhost:3000)** adresini aç
 ## 🗺️ Uygulama Akışı
 
 ```
-1. /vehicle-info  → Araç bilgilerinizi seçin
-2. /upload        → "Sensörü Başlat" ile sürüşü simüle edin (8 sn)
-3. /analysis      → Sürüş özetini ve haritayı görüntüleyin
-4. /analysis/performance → Kategori puanlarını ve sigorta teklifini görün
-5. /sigortam      → Detaylı prim kırılımı ve tasarruf önerilerini inceleyin
+1. /vehicle-info         → Araç bilgilerinizi seçin
+2. /upload               → "Sensörü Başlat" ile sürüşü simüle edin
+3. /analysis             → Sürüş özetini ve haritadaki rotanızı görüntüleyin
+4. /analysis/performance → Hız, vites kullanımı, devir kontrolü gibi verilerin detaylı performans analizini inceleyin ve iyileştirme tavsiyeleri alın
 ```
 
 ---
@@ -97,26 +96,24 @@ Tarayıcınızda **[http://localhost:3000](http://localhost:3000)** adresini aç
 ## 🏗️ Proje Mimarisi
 
 ```
-DriveMetrics/
+Drive Evo/
 ├── src/
 │   ├── app/
-│   │   ├── upload/          # Sensör simülasyonu sayfası
-│   │   ├── analysis/        # Sürüş özeti ve performans sayfaları
-│   │   ├── sigortam/        # Sigorta teklifi sayfası
-│   │   └── api/             # Next.js → Python proxy route'ları
+│   │   ├── upload/          # Sensör veri simülasyonu
+│   │   ├── analysis/        # Sürüş özeti, harita ve performans analiz raporu
+│   │   └── api/             # Next.js → Python API proxy route'ları
 │   ├── components/          # Yeniden kullanılabilir UI bileşenleri
-│   └── lib/                 # Auth ve Prisma yapılandırması
+│   └── lib/                 # Auth ve veritabanı (Prisma) yapılandırması
 │
 ├── backend/
-│   ├── main.py              # FastAPI uygulama ve endpoint'ler
-│   ├── scorer.py            # Sürüş puan hesaplama motoru
-│   ├── insurance.py         # Sigorta fiyatlandırma motoru
-│   ├── models.py            # Pydantic veri modelleri
-│   ├── database.py          # SQLite kayıt/okuma işlemleri
+│   ├── main.py              # FastAPI ana uygulaması ve endpoint'ler
+│   ├── scorer.py            # Sürüş puanı hesaplama ve analiz motoru
+│   ├── models.py            # Pydantic veri doğrulama modelleri
+│   ├── database.py          # Veritabanı kayıt/okuma işlemleri
 │   └── requirements.txt
 │
 └── prisma/
-    └── schema.prisma        # Kullanıcı ve sürüş geçmişi şeması
+    └── schema.prisma        # Kullanıcı ve sürüş geçmişi veritabanı şeması
 ```
 
 **Teknoloji Yığını:**
@@ -132,7 +129,7 @@ DriveMetrics/
 
 ## 🎬 Kullanım Videosu
 
-Bu video, **DriveMetrics** web sitesinin ilk versiyonunun nasıl çalıştığını ve temel özelliklerini gösterir.
+Bu video, **Drive Evo** web sitesinin çalışmasını ve temel analiz özelliklerini göstermektedir.
 
 https://github.com/user-attachments/assets/1af930ff-0112-4043-a17a-c53333a2a830
 
@@ -140,9 +137,9 @@ https://github.com/user-attachments/assets/1af930ff-0112-4043-a17a-c53333a2a830
 
 ## 📖 API Dokümantasyonu
 
-Python backend'inin tüm endpoint'leri, istek/yanıt örnekleri ve hata kodları için **[API.md](./API.md)** dosyasına bakın.
+Python backend servisinin tüm endpoint'leri, analiz detayları ve hata kodları için **[API.md](./API.md)** dosyasına göz atabilirsiniz.
 
-Ayrıca backend çalışırken **[http://localhost:8000/docs](http://localhost:8000/docs)** adresinden interaktif Swagger UI'a erişebilirsiniz.
+Ayrıca backend çalışırken **[http://localhost:8000/docs](http://localhost:8000/docs)** adresinden interaktif Swagger UI'a (otomatik API dokümanına) erişebilirsiniz.
 
 ---
 

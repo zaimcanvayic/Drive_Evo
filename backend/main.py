@@ -1,5 +1,5 @@
 """
-FastAPI Ana Uygulama — DriveMetrics Python Backend
+FastAPI Ana Uygulama — Drive Evo Python Backend
 
 Endpoints:
   GET  /health                    → Servis sağlığı
@@ -19,7 +19,7 @@ import database
 
 # ---------- Uygulama başlangıcı ----------
 app = FastAPI(
-    title="DriveMetrics API",
+    title="Drive Evo API",
     description="Sürüş verisi analizi ve sigorta fiyatlandırma servisi",
     version="1.0.0",
 )
@@ -46,7 +46,7 @@ def startup():
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "service": "DriveMetrics API", "version": "1.0.0"}
+    return {"status": "ok", "service": "Drive Evo API", "version": "1.0.0"}
 
 
 @app.post("/analyze", response_model=DriveScore)

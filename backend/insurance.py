@@ -1,5 +1,5 @@
 """
-Sigorta Fiyatlandırma Motoru — DriveMetrics Python Backend
+Sigorta Fiyatlandırma Motoru — Drive Evo Python Backend
 
 Sürüş puanı ve araç bilgisine göre dinamik sigorta primi hesaplar.
 """

@@ -1,5 +1,5 @@
 """
-Pydantic veri modelleri — DriveMetrics Python Backend
+Pydantic veri modelleri — Drive Evo Python Backend
 """
 from pydantic import BaseModel, Field
 from typing import Optional

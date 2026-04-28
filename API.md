@@ -1,4 +1,4 @@
-# DriveMetrics API Dokümantasyonu
+# Drive Evo API Dokümantasyonu
 
 **Base URL:** `http://localhost:8000`  
 **Format:** JSON  
@@ -38,7 +38,7 @@ Backend'in ayakta olup olmadığını kontrol eder.
 ```json
 {
   "status": "ok",
-  "service": "DriveMetrics API",
+  "service": "Drive Evo API",
   "version": "1.0.0"
 }
 ```

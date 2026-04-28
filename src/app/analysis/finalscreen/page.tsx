@@ -450,7 +450,7 @@ export default function FinalScreenPage() {
               className="text-center"
             >
               <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 mb-8">
-                DriveMetrics
+                Drive Evo
               </h1>
               <motion.p
                 initial={{ opacity: 0 }}

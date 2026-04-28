@@ -1,15 +1,15 @@
 """
-SQLite Veritabanı İşlemleri — DriveMetrics Python Backend
+SQLite Veritabanı İşlemleri — Drive Evo Python Backend
 
 Sürüş analizi sonuçlarını ve sigorta tekliflerini saklar.
-Mevcut Prisma dev.db'den bağımsız, ayrı bir 'drivemetrics_scores.db' dosyası kullanır.
+Mevcut Prisma dev.db'den bağımsız, ayrı bir 'drive-evo_scores.db' dosyası kullanır.
 """
 import sqlite3
 import json
 import os
 from datetime import datetime
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "drivemetrics_scores.db")
+DB_PATH = os.path.join(os.path.dirname(__file__), "drive-evo_scores.db")
 
 
 def get_connection():

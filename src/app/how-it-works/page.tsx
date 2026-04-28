@@ -76,19 +76,19 @@ export default function HowItWorks() {
   const screenshots = [
     {
       src: "/images/how-it-works/dashboard-screenshot.png",
-      alt: "DriveMetrics Dashboard",
+      alt: "Drive Evo Dashboard",
       title: "Modern Dashboard",
       description: "Tüm sürüş verilerinizi tek bir ekranda görüntüleyin"
     },
     {
       src: "/images/how-it-works/analysis-screenshot.png",
-      alt: "DriveMetrics Analysis",
+      alt: "Drive Evo Analysis",
       title: "Detaylı Analiz",
       description: "Yapay zeka destekli detaylı sürüş analizi"
     },
     {
       src: "/images/how-it-works/features-screenshot.png",
-      alt: "DriveMetrics Features",
+      alt: "Drive Evo Features",
       title: "Gelişmiş Özellikler",
       description: "Sürüşünüzü iyileştirmek için tüm araçlar"
     }
@@ -106,7 +106,7 @@ export default function HowItWorks() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              DriveMetrics Nasıl Çalışır?
+              Drive Evo Nasıl Çalışır?
             </h1>
             <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto">
               Yapay zeka destekli sürüş analiz sistemimiz ile sürüş alışkanlıklarınızı optimize edin
@@ -125,7 +125,7 @@ export default function HowItWorks() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Uygulama Görünümü</h2>
-            <p className="text-xl text-gray-600">DriveMetrics'in modern ve kullanıcı dostu arayüzü</p>
+            <p className="text-xl text-gray-600">Drive Evo'in modern ve kullanıcı dostu arayüzü</p>
           </motion.div>
 
           <div className="space-y-16">
@@ -185,7 +185,7 @@ export default function HowItWorks() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Özelliklerimiz</h2>
-            <p className="text-xl text-gray-600">DriveMetrics'in size sunduğu özellikler</p>
+            <p className="text-xl text-gray-600">Drive Evo'in size sunduğu özellikler</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -219,7 +219,7 @@ export default function HowItWorks() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Faydalar</h2>
-            <p className="text-xl text-gray-600">DriveMetrics ile elde edeceğiniz avantajlar</p>
+            <p className="text-xl text-gray-600">Drive Evo ile elde edeceğiniz avantajlar</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -253,7 +253,7 @@ export default function HowItWorks() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Nasıl Başlarım?</h2>
-            <p className="text-xl text-gray-600">DriveMetrics'i kullanmaya başlamak için adımlar</p>
+            <p className="text-xl text-gray-600">Drive Evo'i kullanmaya başlamak için adımlar</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -1,4 +1,4 @@
-# DriveMetrics — Python Backend Kurulum Scripti
+# Drive Evo — Python Backend Kurulum Scripti
 # Bu dosyayı backend/ klasöründe çalıştırın:
 #   python start_backend.py
 
@@ -10,7 +10,7 @@ def main():
     backend_dir = os.path.dirname(os.path.abspath(__file__))
     req_file = os.path.join(backend_dir, "requirements.txt")
 
-    print("=== DriveMetrics Python Backend ===")
+    print("=== Drive Evo Python Backend ===")
     print(f"Python: {sys.executable}")
     print()
 

@@ -1,5 +1,5 @@
 """
-Sürüş Puan Motoru — DriveMetrics Python Backend
+Sürüş Puan Motoru — Drive Evo Python Backend
 
 TypeScript'teki performanceCalculations.ts dosyasından Python'a çevrilmiştir.
 Aynı ağırlıklar ve ceza puanları kullanılmaktadır.
