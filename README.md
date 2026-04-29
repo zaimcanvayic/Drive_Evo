@@ -8,7 +8,7 @@
 
 ## 📋 Gereksinimler
 
-Projeyi çalıştırmadan önce aşağıdaki araçların sisteminizde kurulu olduğundan emin olun:
+Projeyi çalıştırmadan önce aşağıdaki araçların sisteminizde kurulu olduğundan emin olun. 
 
 | Araç | Minimum Sürüm | Kontrol Komutu |
 |------|--------------|----------------|
