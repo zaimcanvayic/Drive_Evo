@@ -4,7 +4,7 @@
 
 > Kullanıcı sensörü başlatır → Python backend veriyi analiz edip puanı hesaplar → Sürücüye anında performans raporu ve iyileştirme önerileri sunulur.
 
----
+--
 
 ## 📋 Gereksinimler
 
