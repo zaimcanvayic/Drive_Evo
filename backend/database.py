@@ -1,7 +1,7 @@
 """
 SQLite Veritabanı İşlemleri — Drive Evo Python Backend
 
-Sürüş analizi sonuçlarını ve sigorta tekliflerini saklar.
+Sürüş analizi sonuçlarını ve sigorta tekliflerini saklar..
 Mevcut Prisma dev.db'den bağımsız, ayrı bir 'drive-evo_scores.db' dosyası kullanır.
 """
 import sqlite3
